@@ -31,7 +31,7 @@ export default function Sidebar() {
       {/* Logo */}
       <div className="p-6 border-b border-alice-blue-100">
         <Link href="/dashboard" className="flex items-center gap-3">
-          <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-cerulean-500 to-cerulean-700 flex items-center justify-center">
+          <div className="w-9 h-9 rounded-xl bg-linear-to-br from-cerulean-500 to-cerulean-700 flex items-center justify-center">
             <span className="material-symbols-outlined text-white text-lg">water_drop</span>
           </div>
           <span className="font-display font-bold text-xl text-cerulean-800">Flo-ra</span>
@@ -58,7 +58,7 @@ export default function Sidebar() {
       {/* User Profile */}
       <div className="p-4 border-t border-alice-blue-100">
         <div className="flex items-center gap-3 p-3 rounded-xl hover:bg-alice-blue-50 transition-colors">
-          <div className="w-9 h-9 rounded-full bg-gradient-to-br from-cerulean-400 to-cerulean-600 flex items-center justify-center text-white font-bold text-sm flex-shrink-0">{initials}</div>
+          <div className="w-9 h-9 rounded-full bg-linear-to-br from-cerulean-400 to-cerulean-600 flex items-center justify-center text-white font-bold text-sm shrink-0">{initials}</div>
           <div className="flex-1 min-w-0">
             <p className="font-medium text-cerulean-800 text-sm truncate">{displayName}</p>
             <p className="text-xs text-alice-blue-500 truncate">{user?.email}</p>

@@ -18,7 +18,7 @@ export default function LogTodayCard({ todayLog }) {
   };
 
   return (
-    <div className="bg-gradient-to-br from-cerulean-600 to-alice-blue-700 rounded-2xl p-6 text-white shadow-lg">
+    <div className="bg-linear-to-br from-cerulean-600 to-alice-blue-700 rounded-2xl p-6 text-white shadow-lg">
       <div className="flex items-center gap-3 mb-3">
         <span className="material-symbols-outlined text-2xl">edit_calendar</span>
         <h2 className="text-lg font-semibold">{todayLog ? "Today's Log Updated" : "Log Today's Data"}</h2>

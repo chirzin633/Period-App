@@ -45,7 +45,7 @@ export default function SymptomLogPage() {
               <button
                 key={date.toISOString()}
                 onClick={() => setSelectedDate(date)}
-                className={`flex-shrink-0 flex flex-col items-center gap-1 px-4 py-3 rounded-xl transition-all duration-200 min-w-[60px] ${
+                className={`shrink-0 flex flex-col items-center gap-1 px-4 py-3 rounded-xl transition-all duration-200 min-w-[60px] ${
                   isSelected ? "bg-cerulean-500 text-white shadow-sm" : "bg-alice-blue-50 text-cerulean-700 hover:bg-cerulean-100"
                 }`}
               >
@@ -79,7 +79,7 @@ export default function SymptomLogPage() {
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-alice-blue-50 to-cerulean-50 rounded-2xl border border-alice-blue-100 p-5">
+          <div className="bg-linear-to-br from-alice-blue-50 to-cerulean-50 rounded-2xl border border-alice-blue-100 p-5">
             <h3 className="font-semibold text-cerulean-700 mb-2 flex items-center gap-2">
               <span className="material-symbols-outlined text-base">lightbulb</span>
               Logging Tip

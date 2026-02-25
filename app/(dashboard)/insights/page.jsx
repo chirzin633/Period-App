@@ -149,7 +149,7 @@ export default function InsightsPage() {
                           </span>
                         </div>
                         <div className="h-2 bg-alice-blue-100 rounded-full overflow-hidden">
-                          <div className="h-full bg-gradient-to-r from-cerulean-400 to-cerulean-500 rounded-full transition-all duration-700" style={{ width: `${pct}%` }} />
+                          <div className="h-full bg-linear-to-r from-cerulean-400 to-cerulean-500 rounded-full transition-all duration-700" style={{ width: `${pct}%` }} />
                         </div>
                       </div>
                     </div>
@@ -169,7 +169,7 @@ export default function InsightsPage() {
 
           {/* Upcoming Prediction Summary */}
           {activePrediction && (
-            <div className="bg-gradient-to-br from-cerulean-500 to-cerulean-700 rounded-2xl p-6 text-white shadow-lg">
+            <div className="bg-linear-to-br from-cerulean-500 to-cerulean-700 rounded-2xl p-6 text-white shadow-lg">
               <h2 className="text-lg font-semibold mb-4 flex items-center gap-2">
                 <span className="material-symbols-outlined">calendar_month</span>
                 Next Cycle Predictions

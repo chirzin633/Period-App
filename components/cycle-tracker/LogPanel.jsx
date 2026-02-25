@@ -60,7 +60,7 @@ export default function LogPanel({ selectedDate }) {
 
   return (
     <div className="bg-white rounded-2xl shadow-sm border border-alice-blue-100 h-full">
-      <div className="p-5 border-b border-alice-blue-100 bg-gradient-to-r from-cerulean-50 to-alice-blue-50 rounded-t-2xl">
+      <div className="p-5 border-b border-alice-blue-100 bg-linear-to-r from-cerulean-50 to-alice-blue-50 rounded-t-2xl">
         <h2 className="font-semibold text-cerulean-800 flex items-center gap-2">
           <span className="material-symbols-outlined text-cerulean-500">edit_calendar</span>
           Log for {dateLabel}
@@ -156,7 +156,7 @@ export default function LogPanel({ selectedDate }) {
                     selectedSymptoms.includes(symptom.id) ? "bg-cerulean-500 text-white shadow-sm" : "bg-alice-blue-50 text-cerulean-700 hover:bg-cerulean-100",
                   )}
                 >
-                  <span className="text-xl flex-shrink-0">{symptom.icon}</span>
+                  <span className="text-xl shrink-0">{symptom.icon}</span>
                   <span className="font-medium text-xs leading-tight">{symptom.name}</span>
                 </button>
               ))}

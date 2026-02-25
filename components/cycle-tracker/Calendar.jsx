@@ -29,7 +29,7 @@ export default function Calendar({ onDayClick }) {
   return (
     <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-alice-blue-100">
       {/* Calendar Header */}
-      <div className="flex items-center justify-between px-6 py-4 bg-gradient-to-r from-cerulean-50 to-alice-blue-50 border-b border-alice-blue-100">
+      <div className="flex items-center justify-between px-6 py-4 bg-linear-to-r from-cerulean-50 to-alice-blue-50 border-b border-alice-blue-100">
         <button onClick={handlePrev} className="w-9 h-9 rounded-xl hover:bg-cerulean-100 flex items-center justify-center text-cerulean-600 transition-colors">
           <span className="material-symbols-outlined">chevron_left</span>
         </button>
@@ -88,7 +88,7 @@ function CalendarDay({ dayNum, dayData, isSelected, isToday, onClick }) {
         isPeriod && !isPredicted && "bg-powder-petal-500 text-white font-medium",
         isPeriod && isPredicted && "bg-powder-petal-200 text-powder-petal-800 font-medium border-2 border-dashed border-powder-petal-400",
         isOvulation && "bg-pacific-cyan-500 text-white font-bold",
-        isFertile && !isOvulation && "bg-gradient-to-b from-pacific-cyan-400 to-cerulean-400 text-white",
+        isFertile && !isOvulation && "bg-linear-to-b from-pacific-cyan-400 to-cerulean-400 text-white",
         isToday && !isPeriod && !isFertile && !isOvulation && "bg-cerulean-500 text-white font-bold shadow-md",
         !isPeriod && !isFertile && !isOvulation && !isToday && "text-cerulean-800 hover:bg-cerulean-50",
       )}
@@ -102,7 +102,7 @@ function CalendarDay({ dayNum, dayData, isSelected, isToday, onClick }) {
 function LegendItem({ color, label }) {
   return (
     <div className="flex items-center gap-1.5 text-xs text-alice-blue-600">
-      <div className={cn("w-3.5 h-3.5 rounded-full flex-shrink-0", color)} />
+      <div className={cn("w-3.5 h-3.5 rounded-full shrink-0", color)} />
       <span>{label}</span>
     </div>
   );

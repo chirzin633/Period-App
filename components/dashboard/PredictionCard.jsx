@@ -12,7 +12,7 @@ function PredictionItem({ icon, iconBg, title, date, daysFrom }) {
 
   return (
     <div className="flex items-center gap-4 p-4 rounded-xl bg-alice-blue-50 hover:-translate-y-0.5 transition-all duration-200 border border-alice-blue-100">
-      <div className={`w-12 h-12 rounded-xl flex items-center justify-center text-xl flex-shrink-0 ${iconBg}`}>
+      <div className={`w-12 h-12 rounded-xl flex items-center justify-center text-xl shrink-0 ${iconBg}`}>
         <span className="material-symbols-outlined">{icon}</span>
       </div>
       <div className="flex-1">

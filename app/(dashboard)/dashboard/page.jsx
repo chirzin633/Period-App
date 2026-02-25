@@ -99,7 +99,7 @@ function TipsCard({ cycleDay }) {
   const currentTip = tips.find((t) => cycleDay >= t.day[0] && cycleDay <= t.day[1]) || tips[1];
 
   return (
-    <div className="bg-gradient-to-br from-alice-blue-50 to-cerulean-50 rounded-2xl p-5 border border-alice-blue-100">
+    <div className="bg-linear-to-br from-alice-blue-50 to-cerulean-50 rounded-2xl p-5 border border-alice-blue-100">
       <h3 className="font-semibold text-cerulean-700 mb-1 flex items-center gap-2">
         <span className="material-symbols-outlined text-base">lightbulb</span>
         Phase Tip: {currentTip.title}

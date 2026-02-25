@@ -91,7 +91,7 @@ export default function SignupForm() {
         <button
           type="button"
           onClick={() => setAgreedToTerms(!agreedToTerms)}
-          className={`w-5 h-5 mt-0.5 rounded border-2 flex items-center justify-center flex-shrink-0 transition-all duration-200 ${agreedToTerms ? "bg-cerulean-500 border-cerulean-500" : "border-alice-blue-300 bg-white"}`}
+          className={`w-5 h-5 mt-0.5 rounded border-2 flex items-center justify-center shrink-0 transition-all duration-200 ${agreedToTerms ? "bg-cerulean-500 border-cerulean-500" : "border-alice-blue-300 bg-white"}`}
         >
           {agreedToTerms && <span className="text-white text-xs font-bold">✓</span>}
         </button>

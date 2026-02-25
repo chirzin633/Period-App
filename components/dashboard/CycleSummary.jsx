@@ -32,7 +32,7 @@ export default function CycleSummary({ cycles, prediction }) {
 
   if (!cycleDay) {
     return (
-      <div className="bg-gradient-to-br from-cerulean-50 to-alice-blue-100 rounded-2xl p-6 mb-6 border border-cerulean-100">
+      <div className="bg-linear-to-br from-cerulean-50 to-alice-blue-100 rounded-2xl p-6 mb-6 border border-cerulean-100">
         <p className="text-cerulean-600 text-center py-4">Log your first period to start tracking your cycle.</p>
       </div>
     );
@@ -43,7 +43,7 @@ export default function CycleSummary({ cycles, prediction }) {
   const daysLeft = Math.max(cycleLength - cycleDay, 0);
 
   return (
-    <div className="bg-gradient-to-br from-cerulean-500 to-cerulean-700 rounded-2xl p-6 mb-6 text-white shadow-lg">
+    <div className="bg-linear-to-br from-cerulean-500 to-cerulean-700 rounded-2xl p-6 mb-6 text-white shadow-lg">
       {/* Header */}
       <div className="flex items-center justify-between mb-5">
         <div>
