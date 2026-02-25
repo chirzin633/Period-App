@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
+
+@import "tailwindcss";
+
+@theme {
+  /* Colors - Cerulean */
+  --color-cerulean-50: #e7f8fd;
+  --color-cerulean-100: #cff1fc;
+  --color-cerulean-200: #a0e4f8;
+  --color-cerulean-300: #70d6f5;
+  --color-cerulean-400: #40c8f2;
+  --color-cerulean-500: #11bbee;
+  --color-cerulean-600: #0d95bf;
+  --color-cerulean-700: #0a708f;
+  --color-cerulean-800: #074b5f;
+  --color-cerulean-900: #032530;
+  --color-cerulean-950: #021a21;
+
+  /* Colors - Pacific Cyan */
+  --color-pacific-cyan-50: #e7fbfe;
+  --color-pacific-cyan-100: #cff6fc;
+  --color-pacific-cyan-200: #9eeefa;
+  --color-pacific-cyan-300: #6ee5f7;
+  --color-pacific-cyan-400: #3ddcf5;
+  --color-pacific-cyan-500: #0dd4f2;
+  --color-pacific-cyan-600: #0aa9c2;
+  --color-pacific-cyan-700: #087f91;
+  --color-pacific-cyan-800: #055561;
+  --color-pacific-cyan-900: #032a30;
+  --color-pacific-cyan-950: #021e22;
+
+  /* Colors - Powder Petal */
+  --color-powder-petal-50: #faf1eb;
+  --color-powder-petal-100: #f5e3d6;
+  --color-powder-petal-200: #ebc8ad;
+  --color-powder-petal-300: #e0ac85;
+  --color-powder-petal-400: #d6915c;
+  --color-powder-petal-500: #cc7533;
+  --color-powder-petal-600: #a35e29;
+  --color-powder-petal-700: #7a461f;
+  --color-powder-petal-800: #522f14;
+  --color-powder-petal-900: #29170a;
+  --color-powder-petal-950: #1d1007;
+
+  /* Colors - Alice Blue */
+  --color-alice-blue-50: #edf5f7;
+  --color-alice-blue-100: #dcecef;
+  --color-alice-blue-200: #b9d8df;
+  --color-alice-blue-300: #95c5d0;
+  --color-alice-blue-400: #72b2c0;
+  --color-alice-blue-500: #4f9eb0;
+  --color-alice-blue-600: #3f7f8d;
+  --color-alice-blue-700: #2f5f6a;
+  --color-alice-blue-800: #203f46;
+  --color-alice-blue-900: #102023;
+  --color-alice-blue-950: #0b1619;
+
+  /* Typography */
+  --font-sans: var(--font-nunito), system-ui, sans-serif;
+  --font-display: var(--font-playfair), serif;
+
+  /* Border Radius */
+  --radius-2xl: 1rem;
+  --radius-3xl: 1.5rem;
+
+  /* Animations & Keyframes */
+  --animate-fade-in: fadeIn 0.5s ease-in-out;
+  --animate-slide-up: slideUp 0.4s ease-out;
+  --animate-pulse-soft: pulseSoft 2s ease-in-out infinite;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes pulseSoft {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.7;
+    }
+  }
+}
+
+/* Layer Base Replacement */
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    min-height: 100vh;
+  }
+
+  .material-symbols-outlined {
+    font-variation-settings:
+      "FILL" 0,
+      "wght" 400,
+      "GRAD" 0,
+      "opsz" 24;
+    line-height: 1;
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-cerulean-200);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-cerulean-500);
+  }
+}

@@ -1,17 +1,15 @@
-import Sidebar from "@/components/Sidebar";
-import DashboardContent from "@/components/DashboardContent";
-import { getPredictedCyclesAction } from "@/lib/actions/cycles";
+import { redirect } from "next/navigation";
+import { createClient } from "@/lib/supabase/server";
 
-export default async function Dashboard() {
-  const result = await getPredictedCyclesAction();
-  if (result.errors) {
-    console.error("Error loading cycles:", result.errors);
+export default async function RootPage() {
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+  if (user) {
+    redirect("/dashboard");
+  } else {
+    redirect("/login");
   }
-
-  return (
-    <div className="flex min-h-screen">
-      <Sidebar />
-      <DashboardContent summary={result.predictions} />
-    </div>
-  );
 }

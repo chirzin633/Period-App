@@ -1,3 +1,6 @@
+# Created by https://www.toptal.com/developers/gitignore/api/node,nextjs,visualstudiocode
+# Edit at https://www.toptal.com/developers/gitignore?templates=node,nextjs,visualstudiocode
+
 ### NextJS ###
 # dependencies
 /node_modules
@@ -169,8 +172,6 @@ dist
 # SvelteKit build / generate output
 .svelte-kit
 
-### Vercel ###
-
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
@@ -190,4 +191,4 @@ dist
 .history
 .ionide
 
-# End of https://www.toptal.com/developers/gitignore/api/vercel,nextjs,node,visualstudiocode
+# End of https://www.toptal.com/developers/gitignore/api/node,nextjs,visualstudiocode
