@@ -13,7 +13,7 @@ export default function LoginPage() {
         <div className="w-12 h-12 rounded-2xl bg-linear-to-br from-cerulean-500 to-cerulean-700 flex items-center justify-center shadow-lg">
           <span className="material-symbols-outlined text-white text-2xl">water_drop</span>
         </div>
-        <span className="font-display font-bold text-3xl text-cerulean-800">Flo-ra</span>
+        <span className="font-display font-bold text-3xl text-cerulean-800">Period-App</span>
       </div>
 
       {/* Card */}
@@ -32,7 +32,7 @@ export default function LoginPage() {
 
       {/* Footer */}
       <div className="text-center mt-6 text-xs text-alice-blue-500">
-        <p>© {new Date().getFullYear()} Flo-ra Health. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Period-App Health. All rights reserved.</p>
         <div className="flex justify-center gap-4 mt-2">
           <Link href="/terms" className="hover:text-cerulean-500 transition-colors">
             Terms

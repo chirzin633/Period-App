@@ -81,7 +81,7 @@ export default function SignupForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
+    <form onSubmit={handleSubmit} className=" flex flex-col gap-2 space-y-4">
       <Input icon="person" type="text" placeholder="Full Name" value={formData.fullName} onChange={handleChange("fullName")} required wrapperClassName="mb-0" />
       <Input icon="mail" type="email" placeholder="Email Address" value={formData.email} onChange={handleChange("email")} required wrapperClassName="mb-0" />
       <Input icon="lock" type="password" placeholder="Password (min. 8 characters)" value={formData.password} onChange={handleChange("password")} required wrapperClassName="mb-0" />

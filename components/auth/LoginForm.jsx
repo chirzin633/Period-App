@@ -33,7 +33,7 @@ export default function LoginForm() {
       <Input label="Email Address" icon="mail" type="email" placeholder="your@email.com" value={email} onChange={(e) => setEmail(e.target.value)} required wrapperClassName="mb-0" />
       <Input label="Password" icon="lock" type="password" placeholder="Enter your password" value={password} onChange={(e) => setPassword(e.target.value)} required wrapperClassName="mb-0" />
 
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between pt-3">
         <label className="flex items-center gap-2.5 cursor-pointer">
           <button
             type="button"

@@ -34,7 +34,7 @@ export default function Sidebar() {
           <div className="w-9 h-9 rounded-xl bg-linear-to-br from-cerulean-500 to-cerulean-700 flex items-center justify-center">
             <span className="material-symbols-outlined text-white text-lg">water_drop</span>
           </div>
-          <span className="font-display font-bold text-xl text-cerulean-800">Flo-ra</span>
+          <span className="font-display font-bold text-xl text-cerulean-800">Period-App</span>
         </Link>
       </div>
 
