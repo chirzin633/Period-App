@@ -2,7 +2,7 @@ import Link from "next/link";
 import SignupForm from "@/components/auth/SignupForm";
 
 export const metadata = {
-  title: "Create Account | Flo-ra",
+  title: "Create Account | Period-App",
 };
 
 export default function SignupPage() {

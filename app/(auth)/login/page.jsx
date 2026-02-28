@@ -2,7 +2,7 @@ import Link from "next/link";
 import LoginForm from "@/components/auth/LoginForm";
 
 export const metadata = {
-  title: "Sign In | Flo-ra",
+  title: "Sign In | Period-App",
 };
 
 export default function LoginPage() {
